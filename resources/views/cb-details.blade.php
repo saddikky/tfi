@@ -150,11 +150,11 @@
                 </div>
                 <div class="form-group">
                     <label for="report_link">Report Link</label>
-                    <input type="url" id="report_link" name="report_link" value="https://drive.google.com/file/d/26202063094/view" required>
+                    <input type="url" id="report_link" name="report_link" value="" required>
                 </div>
                 <div class="form-group">
                     <label for="video_link">Video Link</label>
-                    <input type="url" id="video_link" name="video_link" value="https://drive.google.com/file/d/26202063094/view" required>
+                    <input type="url" id="video_link" name="video_link" value="" required>
                 </div>
                
                 <div class="button-container">
