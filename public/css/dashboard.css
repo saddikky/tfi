@@ -99,7 +99,6 @@ hr {
     align-items: center;
     padding: 10px;
     border-radius: 8px;
-    margin-bottom: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     background-color: transparent;
     text-decoration: none;
@@ -113,6 +112,7 @@ hr {
    padding: 10px;
    border-radius: 8px;
    margin-bottom: 10px;
+   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 
@@ -151,17 +151,9 @@ hr {
    font-weight: 600;  
    text-decoration: none;  
 }
- 
-.submission {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    background-color: transparent;
-    color: inherit;
+
+.view-more:hover {
+   text-decoration: underline;
 }
  
  
@@ -178,8 +170,8 @@ hr {
     font-weight: bold;
     width: 170px;
     text-align: center;
+    margin-top: 0 !important;
 }
- 
  
 .status.pending { background: linear-gradient(180deg,  #f39f33, #f18700); }
 .status.accepted { background: linear-gradient(180deg, #01b464, #01924f); }
@@ -194,62 +186,47 @@ hr {
 }
  
 .circle-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+   position: relative;
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
 }
- 
- 
+
 .circle-progress {
-    position: center;
-    width: 220px;
-    height: 220px;
-    margin: 0 auto;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   transform: rotate(-90deg); 
+}
+
+circle {
+   fill: none;
+   stroke-width: 17;
+}
+
+#bg-circle {
+   stroke: #D9D9D9;
+}
+
+#progress-circle {
+   stroke: #C72C41;
+   stroke-dasharray: 440; 
+   stroke-dashoffset: 440; 
+   transition: stroke-dashoffset 0.6s ease;
+}
+
+.progress-value {
+   position: absolute;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 18px;
+   font-weight: bold;
 }
  
-.circle-progress svg {
-    position: absolute;
-    top: 0;
-    left: 50;
-    width: 100%;
-    height: 100%;
-    transform: rotate(-90deg);
-}
- 
- 
- circle {
-    fill: none;
-    stroke-width: 17;
- }
- 
- 
- circle:first-child {
-    stroke: #ddd;
- }
- 
- 
- #progress-circle {
-    stroke: #ff5733;
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-    transition: stroke-dashoffset 0.6s ease;
- }
- 
- 
- .progress-value {
-    position: absolute;
-    text-align: left;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    font-weight: bold;
- }
- 
- 
- /* Course Card Button Styling */
- .btn {
+/* Course Card Button Styling */
+.btn {
     background-color: #C72C41;
     color: white;
     padding: 10px;
@@ -257,10 +234,10 @@ hr {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
- }
+}
  
  
- .btn:hover {
+.btn:hover {
     background-color: rgba(199, 44, 65, 0.8);
     color: white;
- }
+}

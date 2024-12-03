@@ -14,25 +14,31 @@
             <div class="card">
                         <img src="{{ asset('images\LOGO-TFI-MERAH-FIXED.png') }}" alt="" class="img">
                         <div class="card-body text-start">
-                            @if(session('failed'))
-                                <p class="text-danger">{{ session('failed') }}</p>
+                            @if(session('success'))
+                                <div class="alert alert-success">{{ session('success') }}</div>
                             @endif
+
+                            @if(session('error'))
+                                    <div class="alert alert-danger">{{ session('error') }}</div>
+                            @endif
+
                             <form action="{{ route('login.submit') }}" method="post">
                                 @csrf
-                                <input type="text" name="nim" class="form-control mb-3" placeholder="NIM / Binusian ID">
+                                <input type="text" name="nim" class="form-control mb-3 @error('nim') is-invalid @enderror" placeholder="NIM" value="{{ old('nim') }}" required>
                                 @error('nim')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
-                                <input type="password" name="password" class="form-control mb-4" placeholder="Password">
+
+                                <input type="password" name="password" class="form-control mb-4 @error('password') is-invalid @enderror" placeholder="Password" required>
                                 @error('password')
-                                    <div class="invalid-feedback">{{ $message }}</div>
+                                    <div class="invalid-feedback">The password you entered is incorrect. Please try again.</div>
                                 @enderror
+
                                 <button type="submit" class="status waiting w-50 mx-auto d-block">LOGIN</button>
                             </form>
                         </div>
                 </div>
             </div>
         </div>
-    
 </body>
 </html>

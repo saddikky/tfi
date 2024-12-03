@@ -25,7 +25,7 @@ btn{
     display: inline-flex; /* Change display to inline-flex for centering */
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 10px 25px;
     border: none;
     border-radius: 8px;
@@ -40,6 +40,10 @@ btn{
     background: linear-gradient(180deg, #ed4855, #d73930);
 }
 
+.status.waiting:hover {
+    background: linear-gradient(180deg, #ed4855, #9b201a);
+}
+
 img{
     display: block;
     margin-left: auto;
@@ -51,4 +55,24 @@ img{
 
 .card{
     width: 50%;
+}
+
+.mb-3, .mb-4 {
+    margin-bottom: 1rem !important;
+}
+
+.invalid-feedback{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.regist{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #C72C41;
+}
+
+.regist:hover {
+    text-decoration: underline;
 }

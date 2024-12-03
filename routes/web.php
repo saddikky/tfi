@@ -37,6 +37,7 @@ Route::get('/se-details', [AuthController::class, 'showSEdetails'])->name('SEdet
 Route::get('/cb-details', [AuthController::class, 'showCBdetails'])->name('CBdetails');
 Route::get('/cb-details-2', [AuthController::class, 'showCBdetails2'])->name('CBdetails2');
 Route::get('/si-details', [AuthController::class, 'showSIdetails'])->name('SIdetails');
+Route::get('/si-details-2', [AuthController::class, 'showSIdetails2'])->name('SIdetails2');
 
 
 Route::get('/admin/dashboard', [AuthController::class, 'showAdmDashboard'])->name('admDashboard');

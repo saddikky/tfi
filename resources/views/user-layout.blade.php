@@ -32,7 +32,7 @@
             <div class="py-2">
                 <form action="#" method="post">
                     @csrf
-                    <button class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 width:350 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Logout</button>
+                    <button class="logout-but block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 width:500 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Logout</button>
                 </form>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 <li><a href="{{ route('dashboard') }}" class="{{ Route::is('dashboard') ? 'active' : '' }}">Dashboard</a></li>
                 <li><a href="{{ route('social-event') }}" class="{{ Route::is('social-event', 'SEdetails', 'SEregister') ? 'active' : '' }}">Social Event</a></li>
                 <li><a href="{{ route('cb-course') }}" class="{{ Route::is('cb-course', 'CBdetails', 'CBdetails2') ? 'active' : '' }}">Social Activity - CB Course</a></li>
-                <li><a href="{{ route('social-innovation-project') }}" class="{{ Route::is('social-innovation-project', 'SIdetails') ? 'active' : '' }}">Social Innovation Project</a></li>
+                <li><a href="{{ route('social-innovation-project') }}" class="{{ Route::is('social-innovation-project', 'SIdetails', 'SIdetails2') ? 'active' : '' }}">Social Innovation Project</a></li>
                 <li><a href="{{ route('comserv') }}" class="{{ Route::is('comserv') ? 'active' : '' }}">Community Service Hours</a></li>
             </ul>
         </div>

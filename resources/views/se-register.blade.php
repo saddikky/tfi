@@ -7,6 +7,11 @@
 @section('content')
 
 <body>
+    <div class="backburner">
+        <a href="{{ route('SEdetails') }}">
+            <img src="{{ asset('images\back-button.png') }}" alt="" width="60px">
+        </a>
+    </div>
 
     <div class="containerss">
         <section class="registration-form">
@@ -14,17 +19,17 @@
             <form id="form">
                 <div class="form-group">
                     <label for="nim">NIM</label>
-                    <span id="nim">: fetch nim</span>
+                    <span id="nim">: {{ Auth::user()->nim }}</span>
                 </div>
     
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <span id="name">: fetch name</span>
+                    <span id="name">: {{ Auth::user()->name }}</span>
                 </div>
     
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <span id="email">: fetch email</span>
+                    <span id="email">: {{ Auth::user()->email }}</span>
                 </div>
     
                 <div class="form-group">
@@ -34,22 +39,22 @@
     
                 <div class="form-group">
                     <label for="campus">Campus</label>
-                    <span id="campus">BINUS CAMPUS</span>
+                    <span id="campus">: BINUS CAMPUS</span>
                 </div>
     
                 <div class="form-group">
                     <label for="faculty">Faculty</label>
-                    <span id="faculty">Science</span>
+                    <span id="faculty">: Science</span>
                 </div>
     
                 <div class="form-group">
                     <label for="program">Study Program</label>
-                    <span id="program">Computer Science</span>
+                    <span id="program">: Computer Science</span>
                 </div>
     
                 <div class="form-group">
                     <label for="requirements">Requirements</label>
-                    <span id="requirements">harus cinta kami apa adanya</span>
+                    <span id="requirements">: Bagi yang berminat dan berhasil mendaftar, silakan bergabung di grup WhatsApp melalui tautan berikut: https://chat.whatsapp.com/</span>
                 </div>
 
                 <div class="form-group">
@@ -61,15 +66,15 @@
                     </label>
                 </div>
                 
-                <div class="button-container">
-                    <button type="button" class="status in-review">CANCEL</button>
-                    <button type="submit" class="status reviewed" disabled>REGISTER</button>
+                <div class="button-container-solo">
+                    <!-- <button type="button" class="status in-review">CANCEL</button> -->
+                     <a href= "{{ route('social-event') }}">
+                         <button type="submit" class="status reviewed" disabled>REGISTER</button>
+                     </a>
                 </div>
             </form>
         </section>
     </div>
-
-    <!-- <script src="script.js"></script> -->
 </body>
 
 @endsection

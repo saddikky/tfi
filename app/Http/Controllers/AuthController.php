@@ -50,6 +50,10 @@ class AuthController extends Controller
         return view('si-details');
     }
 
+    function showSIdetails2(){
+        return view('si-details-2');
+    }
+
     function showComserv(){
         return view('comserv');
     }

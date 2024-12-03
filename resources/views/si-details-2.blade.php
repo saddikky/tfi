@@ -7,7 +7,7 @@
 
 @section('content')
 
-<div class="backburner">
+    <div class="backburner">
         <a href="{{ route('social-innovation-project') }}">
             <img src="{{ asset('images\back-button.png') }}" alt="" width="60px">
         </a>
@@ -16,9 +16,13 @@
     <div class="centered-div">
         <ol class="lg:flex items-center w-full space-y-4 lg:space-y-0">
             <li class="flex-1">
-                <a class="flex items-center font-medium space-x-3 p-4 rounded-lg">
+                <a href="https://pagedone.io/" class="flex items-center font-medium highlight-status rounded-lg">
                     <div class="flex-shrink-0">
-                        <span class="flex-shrink-0 w-10 h-10 border rounded-full transparent flex justify-center items-center text-sm">01</span>
+                        <span class="w-10 h-10 rounded-full flex justify-center items-center mr-3 text-sm text-white">
+                            <svg class="w-5 h-5 stroke-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12L9.28722 16.2923C9.62045 16.6259 9.78706 16.7927 9.99421 16.7928C10.2014 16.7929 10.3681 16.6262 10.7016 16.2929L20 7" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="my-path"></path>
+                            </svg>
+                        </span>
                     </div>
                     <h4 class="text-base">Proposal</h4>
                 </a>
@@ -28,8 +32,8 @@
             </svg>
             <li class="flex-1">
                 <a class="flex items-center font-medium space-x-3 p-4 rounded-lg">
-                    <span class="flex-shrink-0 w-10 h-10 border rounded-full before flex justify-center items-center text-sm">02</span>
-                    <h4 class="text-before whitespace-nowrap">Report</h4>
+                    <span class="flex-shrink-0 w-10 h-10 border rounded-full transparent flex justify-center items-center text-sm">02</span>
+                    <h4 class="text-base whitespace-nowrap">Report</h4>
                 </a>
             </li>
         </ol>
@@ -37,69 +41,78 @@
 
     <div class="containerss">
         <section class="student-detail">
-            <h2 class="form-title">Registration Form</h2>
-            <form id="form">
+            <h2 class="form-title">Proposal</h2>
             <div class="form-group">
                 <label for="si-name">Social Innovation</label>
-                <input type="text" id="si-name" value="" required>
+                <span>: What are your SDGs? - BINUS @Kemanggisan</span>
             </div>
             <div class="form-group">
                 <label for="nim">Leader NIM</label>
-                <input type="text" id="nim" value="" required>
+                <span>: 2702353820</span>
             </div>
             <div class="form-group">
                 <label for="leader-name">Leader Name</label>
-                <input type="text" id="leader-name" value="" required>
+                <span>: Ahmad Fauzi</span>
             </div>
             <div class="form-group">
                 <label for="phone-number">Phone Number</label>
-                <input type="tel" id="phone-number" value="" required>
+                <span>: 081234567890</span>
             </div>
             <div class="form-group">
                 <label for="project-name">Project Name</label>
-                <input type="text" id="project-name" value="" required>
+                <span>: Sosialisasi Peningkatan Minat Baca</span>
             </div>
             <div class="form-group">
                 <label for="start-date">Start Date</label>
-                <input type="date" id="start-date" name="start-date" required>
+                <span>: 13 October 2024</span>
             </div>
             <div class="form-group">
                 <label for="end-date">End Date</label>
-                <input type="date" id="end-date" name="end-date" required>
+                <span>: 11 December 2024</span>
             </div>
             <div class="form-group">
                 <label for="category">Category</label>
-                <select id="category" name="category" required>
-                    <option value="">Select a category</option>
-                    <option value="education">Education</option>
-                    <option value="environment">Environment</option>
-                    <option value="health">Health</option>
-                    <option value="welfare">Welfare</option>
-                </select>
+                <span>: Education</span>
             </div>
             <div class="form-group">
                 <label for="scale">Scale</label>
-                <select id="scale" name="scale" required>
-                    <option value="">Select a scale</option>
-                    <option value="local">Local</option>
-                    <option value="internatioal">International</option>
-                </select>
+                <span>: Local</span>
             </div>
+            <div class="form-group">
+                    <label for="proposal">Proposal</label>
+                    <span class="status blue">DOWNLOAD PROPOSAL</span>
+                    <!-- <a href="#" class="status blue">DOWNLOAD PROPOSAL</a> -->
+            </div>
+        </section>
+    </div>
+
+    <div class="containerss">
+        <section class="student-detail">
+            <h2 class="form-title">Report</h2>
             <div class="form-group">
                     <label for="proposal">Proposal</label>
                     <input type="file" id="proposal" name="proposal" accept=".pdf, .doc, .docx" required>
             </div>
             <div class="form-group  centered-div">
+                <!-- <span class="status blue">DOWNLOAD TEMPLATE</span> -->
                 <a href="#" class="status blue">DOWNLOAD TEMPLATE</a>
             </div>
-
+            <div class="form-group">
+                <label for="video_link">Video Link</label>
+                <input type="url" id="video_link" name="video_link" value="" required>
+            </div>
+            <div class="form-group">
+                <label for="scale">Freshmen Chaperone Role</label>
+                <select id="scale" name="scale" required>
+                    <option value="">Select a role</option>
+                    <option value="local">Freshmen Partner (FP)</option>
+                    <option value="internatioal">Freshmen Leader (FL)</option>
+                </select>
+            </div>
             <div class="button-container-solo">
                 <!-- <a href="{{ route('social-innovation-project') }}" class="status in-review">CANCEL</a> -->
                 <a href="{{ route('social-innovation-project') }}" class="status in-review" disabled>SUBMIT</a>
-
-                <!-- <button type="submit" class="status reviewed" disabled>SUBMIT</button> -->
             </div>
-            </form>
         </section>
     </div>
 

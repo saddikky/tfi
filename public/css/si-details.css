@@ -54,26 +54,34 @@ body {
     font-size: 2rem;
 }
 
-/* h2 {
-    text-align: left;
-    margin-bottom: 30px; 
-    font-size: 20px !important;
-    font-weight: bold !important; 
-    color: #333;
-} */
-
 .form-group {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     padding: 20px 0;
-    
 }
 
 .form-group label {
-    width: 150px; /* Adjust this width as needed */
-    /* margin-right: 10px; */
+    width: 150px; 
     text-align: left;
+}
+
+label {
+    flex: 1;
+}
+
+span {
+    flex: 2;
+    text-align: left;
+    color: #555;
+}
+
+/* a .status{
+    flex: 1;
+} */
+
+span .status{
+    width: 300px !important;
 }
 
 .form-group input[type="file"] {
@@ -97,15 +105,6 @@ body {
     border-bottom: none;
 }
 
-label {
-    flex: 1;
-}
-
-span {
-    flex: 2;
-    text-align: left;
-    color: #555;
-}
 
 .button-container {
     display: flex;

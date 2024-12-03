@@ -78,7 +78,6 @@ h4{
 }
 
 .card {
-    /* justify-content: flex-start;     */
     flex: 0 1 calc(33% - 20px);
     max-width: calc(33% - 20px);
     background-color:  #ffff;
@@ -88,6 +87,15 @@ h4{
     margin: 10px;
     box-sizing: border-box;
     transition: transform 0.3s;
+    justify-content: space-between;
+}
+
+.card-footer {
+    /* margin-top: auto; */
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    text-align: left; 
 }
 
 .card p {
@@ -113,6 +121,10 @@ h4{
     margin-top: 10px;
     color: #0097da;
     text-decoration: none;
+}
+
+.view-moree{
+    text-align: right !important;
 }
 
 .view-more:hover {

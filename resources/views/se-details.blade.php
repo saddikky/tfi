@@ -7,6 +7,13 @@
 @section('content')
 
 <body>
+
+    <div class="backburner">
+        <a href="{{ route('social-event') }}">
+            <img src="{{ asset('images\back-button.png') }}" alt="" width="60px">
+        </a>
+    </div>
+
     <div class="containerss">
         <h2 class="form-title">Event Detail</h2>
         <div class="form-group">
@@ -47,7 +54,7 @@
         </div>
         <div class="form-group">
             <label>Event Description</label>
-            <span>: Kegiatan ini tidak boleh diikuti Binusian 25 atau mahasiswa lainnya...</span>
+            <span>: Dibutuhkan 30 volunteer untuk kegiatan penanaman bibit pohon     di Taman Palmerah pada hari Minggu, 17 November 2024. Berkumpul di Lobby Admisi Kampus Anggrek pukul 07.00, berangkat bersama menggunakan kendaraan BINUS pukul 07.30, dan kembali maksimal pukul 13.00.</span>
         </div>
         <div class="form-group">
             <label>Organizer</label>
@@ -59,11 +66,11 @@
         </div>
         <div class="form-group">
             <label>Requirements</label>
-            <span>: hNGGGG</span>
+            <span>: Bagi yang berminat dan berhasil mendaftar, silakan bergabung di grup WhatsApp melalui tautan berikut: https://chat.whatsapp.com/</span>
         </div>
-        <div class="button-container">
-            <a href="{{ route('social-event') }}" class="status in-review">BACK</a>
-            <a href="{{ route('SEregister') }}" class="status reviewed">SIGN UP</a>          
+        <div class="button-container-solo">
+            <!-- <a href="{{ route('social-event') }}" class="status in-review">BACK</a> -->
+            <a href="{{ route('SEregister') }}" class="status in-review">SIGN UP</a>          
         </div>
     </div>
 </body>

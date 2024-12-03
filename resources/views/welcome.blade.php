@@ -20,46 +20,32 @@
                <h4>Community Service Hours</h4>
            </div>
            <div class="circle-container">
-               <div class="progress-value" id="progress-value">0%</div>
-               <svg width="300" height="200">
-                   <defs>
-                       <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                           <stop offset="0%" style="stop-color:#4caf50; stop-opacity:1" />
-                           <stop offset="100%" style="stop-color:#81c784; stop-opacity:1" />
-                       </linearGradient>
-                   </defs>
-                   <!-- Background Circle -->
-                   <circle cx="100" cy="100" r="70" id="bg-circle"></circle>
-                   <!-- Progress Circle -->
-                   <circle cx="100" cy="100" r="70" id="progress-circle"></circle>
-               </svg>
-           </div>
+            <div class="progress-value" id="progress-value"></div>
+                <svg width="200" height="200" class="circle-progress">
+                    <circle cx="100" cy="100" r="70" id="bg-circle"></circle>
+                    <circle cx="100" cy="100" r="70" id="progress-circle"></circle>
+                </svg>
+            </div>
        </div>
 
-
-
-
-       <!-- Upcoming Social Event Card -->
+       <!-- Upcming Social Event Card -->
        <div class="card soc">
         <div class="kiri">
             <h4>Upcoming Social Event</h4>
         </div>
             <div class="event-list">
                <div class="event">
-                   <span>Pelatihan Pengenalan Komputer Siswa SD 1</span>
-                   <span>31 Sep 2024, 09:00 GMT+7</span>
+                   <span>Volunteer Kegiatan Penanaman Bibit Pohon</span>
+                   <span>30 September 2024, 09:00 GMT+7</span>
                </div>
                <div class="event">
-                   <span>Pelatihan Pengenalan Komputer Siswa SD 2</span>
-                   <span>31 Sep 2024, 09:00 GMT+7</span>
+                   <span>Clean Beach Campaign</span>
+                   <span>15 October 2024, 09:00 GMT+7</span>
                </div>
                <a href="{{ route('social-event') }}" class="view-more" style="text-align: right">View more >></a>
            </div>
        </div>
    </div>
-
-
-
 
    <!-- My Submission Card -->
    <div class="card submission-card">
@@ -87,13 +73,7 @@
    </div>
 </div>
 
-
-
-
 @endsection
-
-
-
 
 @push('scripts')
    <script src="{{ asset('js/dashboard.js') }}"></script>

@@ -218,14 +218,56 @@ p{
     background: linear-gradient(180deg, #ed4855, #d73930);
 }
 
+.status.waiting:hover {
+    background: linear-gradient(180deg, #ed4855, #9b201a);
+}
+
 .status.in-review {
     background: linear-gradient(180deg,  #f39f33, #f18700);
+}
+
+.status.in-review:hover {
+    background: linear-gradient(180deg,  #f39f33, #db7c00);
 }
 
 .status.reviewed {
     background: linear-gradient(180deg, #01b464, #01924f);
 }
 
+.status.reviewed:hover {
+    background: linear-gradient(180deg, #01b464, #027b42);
+}
+
 .status.blue {
     background: linear-gradient(180deg, #0097da, #006f9e);
+}
+
+.status.blue:hover {
+    background: linear-gradient(180deg, #0097da, #01597f);
+}
+
+input[type=file]::file-selector-button {
+    margin-left: 0px !important;
+    margin-right: 20px !important;
+    border: none !important;
+    background: linear-gradient(180deg, #0097da, #006f9e) !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    transition: background .2s ease-in-out !important;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: linear-gradient(180deg, #0097da, #00516c) !important;
+}
+
+.logout-but{
+    width: 100%;
+}
+
+.button-container-solo {
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
 }

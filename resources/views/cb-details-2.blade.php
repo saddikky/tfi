@@ -13,6 +13,12 @@
 
 <body>
 
+    <div class="backburner">
+        <a href="{{ route('CBdetails') }}">
+            <img src="{{ asset('images\back-button.png') }}" alt="" width="60px">
+        </a>
+    </div>
+
     <div class="centered-div">
         <ol class="lg:flex items-center w-full space-y-4 lg:space-y-0">
             <li class="flex-1">
@@ -40,17 +46,34 @@
     </div>
    
     <div class="containerss">
-        <form method="post" action="#" class="mb-5" enctype="multipart/form-data">
-        @csrf
             <section class="progress-form">
                 <h2 class="form-title">Progress Form</h2>
                 <div class="form-group">
                     <label for="project_name">Project Name</label>
-                    <input type="text" id="project_name" name="project-name" value="Pengaruh Globalisasi terhadap Moderasi Beragama di Kalangan Remaja" required>
+                    <input type="text" id="project_name" name="project_name" value="" required>
                 </div>
                 <div class="form-group">
                     <label for="project_location">Project Location</label>
-                    <input type="text" id="project_location" name="project-location" value="SMPK Sang Timur" required>
+                    <input type="text" id="project_location" name="project_location" value="" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Select Option</option>
+                        <option value="Education">Education</option>
+                        <option value="Environment">Environment</option>
+                        <option value="Health">Health</option>
+                        <option value="Welfare">Welfare</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="scale">Scale</label>
+                    <select id="scale" name="scale" required>
+                        <option value="" disabled selected>Select Option</option>
+                        <option value="Local">Local</option>
+                        <option value="National">National</option>
+                        <option value="International">International</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="report">Report</label>
@@ -62,20 +85,20 @@
                 </div>
                 <div class="form-group">
                     <label for="report_link">Report Link</label>
-                    <input type="url" id="report_link" name="report_link" value="https://drive.google.com/file/d/26202063094/view" required>
+                    <input type="url" id="report_link" name="report_link" value="" required>
                 </div>
                 <div class="form-group">
                     <label for="video_link">Video Link</label>
-                    <input type="url" id="video_link" name="video_link" value="https://drive.google.com/file/d/26202063094/view" required>
+                    <input type="url" id="video_link" name="video_link" value="" required>
                 </div>
                
                 <div class="button-container-solo">
                     <!-- <a href="{{ route('cb-course') }}" class="back-button">BACK</a> -->
-                    <a href="#" class="next-button">SUBMIT</a>    
+                    <a href="{{ route('cb-course') }}" type="submit" class="status in-review">SUBMIT</a>    
                 </div>
             </section>
-        </form>
     </div>
+
 </body>
 
 
