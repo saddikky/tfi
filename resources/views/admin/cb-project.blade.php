@@ -29,11 +29,11 @@
         <div class="cards-container">
             <div class="tab-content" data-tab="ongoing">
                 <div class="card ongoing">
-                    <h4>fetch project name</h4>
-                    <p>CB Type: fetch</p>
-                    <p>Lecturer: fetch</p>
-                    <p>Leader Name: fetch</p>
-                    <p>CB Class: fetch</p>
+                    <h4>Project CB Course Odd 2023/2024</h4>
+                    <p>CB Type: Pancasila</p>
+                    <p>Lecturer: Bambas Pamungkang</p>
+                    <p>Leader Name: Kiyora Wears</p>
+                    <p>CB Class: LA07</p>
                     <a href="#" class="status in-review">VIEW VIDEO</a>
                     <a href="#" class="status in-review">VIEW REPORT</a>
                     <div class="button-container">
@@ -43,11 +43,11 @@
                 </div>
 
                 <div class="card ongoing">
-                    <h4>fetch project name</h4>
-                    <p>CB Type: fetch</p>
-                    <p>Lecturer: fetch</p>
-                    <p>Leader Name: fetch</p>
-                    <p>CB Class: fetch</p>
+                    <h4>Project CB Course Odd 2023/2024</h4>
+                    <p>CB Type: Pancasila</p>
+                    <p>Lecturer: Thomas Shelebey</p>
+                    <p>Leader Name: Jeremy Tetty</p>
+                    <p>CB Class: LB07</p>
                     <a href="#" class="status in-review">VIEW VIDEO</a>
                     <a href="#" class="status in-review">VIEW REPORT</a>
                     <div class="button-container">
@@ -60,43 +60,47 @@
 
             <div class="tab-content" data-tab="past">
                 <div class="card past">
-                    <h4>fetch project name</h4>
-                    <p>CB Type: fetch</p>
-                    <p>Lecturer: fetch</p>
-                    <p>Leader Name: fetch</p>
-                    <p>CB Class: fetch</p>
-                    <p>Reviewer: fetch</p>
-                    <a href="#" class="status done reviewed">REVIEWED</a>
+                    <p><b>STATUS: REVIEWED</b></p>
+                    <hr>
+                    <h4>Project CB Course Odd 2023/2024</h4>
+                    <p>CB Type: Pancasila</p>
+                    <p>Lecturer: Bambas Pamungkang</p>
+                    <p>Leader Name: Fedrick Tasripin</p>
+                    <p>CB Class: LA07</p>
+                    <p>Reviewer: Ave Maria</p>
                 </div>
 
                 <div class="card past">
-                    <h4>fetch project name</h4>
-                    <p>CB Type: fetch</p>
-                    <p>Lecturer: fetch</p>
-                    <p>Leader Name: fetch</p>
-                    <p>CB Class: fetch</p>
-                    <p>Reviewer: fetch</p>
-                    <a href="#" class="status done reviewed">REVIEWED</a>
+                    <p><b>STATUS: REVIEWED</b></p>
+                    <hr>
+                    <h4>Project CB Course Odd 2023/2024</h4>
+                    <p>CB Type: Pancasila</p>
+                    <p>Lecturer: Bambas Pamungkang</p>
+                    <p>Leader Name: Oh Sehun</p>
+                    <p>CB Class: LA07</p>
+                    <p>Reviewer: Claribel Anindita Sehulina Pinem</p>
                 </div>
 
                 <div class="card past">
-                    <h4>fetch project name</h4>
-                    <p>CB Type: fetch</p>
-                    <p>Lecturer: fetch</p>
-                    <p>Leader Name: fetch</p>
-                    <p>CB Class: fetch</p>
-                    <p>Reviewer: fetch</p>
-                    <a href="#" class="status done reviewed">REVIEWED</a>
+                    <p><b>STATUS: REVIEWED</b></p>
+                    <hr>
+                    <h4>Project CB Course Odd 2023/2024</h4>
+                    <p>CB Type: Agama</p>
+                    <p>Lecturer: Syaura Pamungkang</p>
+                    <p>Leader Name: Prasetyo Arvin</p>
+                    <p>CB Class: LB08</p>
+                    <p>Reviewer: Solihin</p>
                 </div>
 
                 <div class="card past">
-                    <h4>fetch project name</h4>
-                    <p>CB Type: fetch</p>
-                    <p>Lecturer: fetch</p>
-                    <p>Leader Name: fetch</p>
-                    <p>CB Class: fetch</p>
-                    <p>Reviewer: fetch</p>
-                    <a href="#" class="status done reviewed">REVIEWED</a>
+                    <p><b>STATUS: REVIEWED</b></p>
+                    <hr>
+                    <h4>Project CB Course Odd 2023/2024</h4>
+                    <p>CB Type: Kewarganegaraan</p>
+                    <p>Lecturer: Arnold Poernomo</p>
+                    <p>Leader Name: Andira Dinda Larasathi</p>
+                    <p>CB Class: LD64</p>
+                    <p>Reviewer: Ave Maria</p>
                 </div>
             </div>
 

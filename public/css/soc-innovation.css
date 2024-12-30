@@ -53,6 +53,67 @@ h4{
     transition: transform 0.3s;
 }
 
+.card-dalam {
+    justify-content: flex-start;
+    flex: 0 1 calc(33% - 20px);
+    background-color: #ffff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card-bawah{
+    justify-content: center;
+    flex: 0 1 calc(33% - 20px);
+    background-color: #ffff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    background-color: #ed4855;
+    padding: -30px;
+    margin: -20px;
+}
+
+.card-bawah button{
+    width: 92.5%;;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.card-bawah p{
+    color: #f5f5f5 !important;
+    margin-left: 20px;
+    margin-bottom: 5px !important;
+}
+
+.card-bawah b{
+    color: #f5f5f5 !important;
+}
+
+.card-bawah p:first-child{
+    margin-top: 20px;
+}
+
+.card-bawah p:last-child{
+    margin-bottom: 20px;
+}
+
+.card p {
+    line-height: 1.6; /* Adjust this value as needed */
+    margin-bottom: 10px; /* Optional: reduce space between paragraphs */
+}
+
+.card hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card b{
+    color: #444444;
+}
+
 .card-footer {
     padding: 0;
     background-color: transparent;

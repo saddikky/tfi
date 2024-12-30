@@ -34,6 +34,9 @@
                                     <div class="invalid-feedback">The password you entered is incorrect. Please try again.</div>
                                 @enderror
 
+                                <button type="submit" class="status waiting w-50 mx-auto d-block">LOGIN</button>
+
+
                                 <div class="regiss">
                                     <a href="{{ route('register') }}" class="regist">Don't have an account? Register now!</a>
                                 </div>

@@ -19,7 +19,6 @@
     <hr class="my-3">
 
 <div class="cards-container">
-        <!-- <a href="#" class="card-link"> -->
             <div class="card">
                 <h4>Project CB Course Odd 2023/2024</h4>
                 <p>CB Type: Agama</p>
@@ -28,9 +27,7 @@
                 <p>Report Deadline: 2024-05-27</p>
                 <a href="{{ route('admEdit') }}" class="status waiting">EDIT</a>
             </div>
-        <!-- </a> -->
 
-        <!-- <a href="#" class="card-link"> -->
             <div class="card">
                 <h4>Project CB Course Odd 2023/2024</h4>
                 <p>CB Type: Pancasila</p>
@@ -39,9 +36,7 @@
                 <p>Report Deadline: 2023-05-27</p>
                 <button class="status waiting">EDIT</button>
             </div>
-        <!-- </a> -->
 
-        <!-- <a href="#" class="card-link"> -->
             <div class="card">
                 <h4>Project CB Course Odd 2024/2025</h4>
                 <p>CB Type: Pendidikan</p>
@@ -50,9 +45,7 @@
                 <p>Report Deadline: 2024-12-25</p>
                 <button class="status waiting">EDIT</button>
             </div>
-        <!-- </a> -->
 
-        <!-- <a href="#" class="card-link"> -->
             <div class="card">
                 <h4>Project CB Course Odd 2024/2025</h4>
                 <p>CB Type: Pendidikan</p>
@@ -61,9 +54,7 @@
                 <p>Report Deadline: 2024-12-25</p>
                 <button class="status waiting">EDIT</button>
             </div>
-        <!-- </a> -->
 
-        <!-- <a href="#" class="card-link"> -->
             <div class="card">
                 <h4>Project CB Course Odd 2024/2025</h4>
                 <p>CB Type: CB Pendidikan</p>
@@ -72,7 +63,6 @@
                 <p>Report Deadline: 2024-12-25</p>
                 <button class="status waiting">EDIT</button>
             </div>
-        <!-- </a>    -->
 </div>
 
 @endsection
